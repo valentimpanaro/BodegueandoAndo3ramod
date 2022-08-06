@@ -124,6 +124,10 @@ a:hover {
 .style {
     list-style: none;
 }
+ 
+ div.container-fluid{
+    padding-right: 0px;
+ }
 
 .renacer {
     background-color: rgba(153, 192, 185, 0.5);
@@ -423,6 +427,11 @@ a:hover {
     .decoracion {
         text-align: center;
     }
+
+    .renacer, .susanaBalbo, .riccitelli, .rosell, .catena, .casaVigil, .trapiche, .santaJulia, .agostino, .argentia, .abeja, .bianchi, .algodon, .suter, .rivier, .superUco, .andeluna, .corazon, .alfa, .zuccardi {
+        width: auto;
+        height: auto;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -451,6 +460,7 @@ a:hover {
 
     .renacer, .susanaBalbo, .riccitelli, .rosell, .catena, .casaVigil, .trapiche, .santaJulia, .agostino, .argentia, .abeja, .bianchi, .algodon, .suter, .rivier, .superUco, .andeluna, .corazon, .alfa, .zuccardi {
         width: 770px;
+        height: auto;
     }
 
     .sunsets, .bici, .dormir {
