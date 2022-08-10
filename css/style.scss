@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gantari:wght@200&family=Roboto:wght@300&display=swap');
 
+$colorBackground: rgba(153, 192, 185, 0.5);
+
 * {
     margin: 0;
     padding: 0;
@@ -34,8 +36,15 @@ a {
     color: black;
     padding: 0px 10px 0px 10px;
     grid-area: imagen;
-    color: black;
     text-decoration: none;
+    &:hover {
+        color: black;
+    }
+}
+
+a.navbar-brand {
+    padding: 0px;
+    margin: 0px;
 }
 
 .decoracion {
@@ -58,10 +67,9 @@ p {
 .mediana {
     width: 450px;
     height: 290px;
-}
-
-.mediana:hover {
-    filter: grayscale(60%);
+    &:hover {
+        filter: grayscale(60%);
+    }
 }
 
 .pequeno {
@@ -101,14 +109,11 @@ h2 {
 
 h3 {
     color: black;
+    font-weight: bold;
 }
 
 footer {
     margin: 15px 0px;
-}
-
-a:hover {
-    color: black;
 }
 
 #encabezado {
@@ -127,13 +132,8 @@ div.container-fluid {
     padding-right: 0px;
 }
 
-a.navbar-brand {
-    padding: 0px;
-    margin: 0px;
-}
-
 .renacer {
-    background-color: rgba(153, 192, 185, 0.5);
+    background-color: $colorBackground;
     width: 650px;
     height: 200px;
     margin: auto;
@@ -144,7 +144,7 @@ a.navbar-brand {
 }
 
 .susanaBalbo {
-    background-color: rgba(153, 192, 185, 0.5);
+    background-color: $colorBackground;
     width: 650px;
     height: 200px;
     margin: 10px auto;
@@ -155,7 +155,7 @@ a.navbar-brand {
 }
 
 .riccitelli {
-    background-color: rgba(153, 192, 185, 0.5);
+    background-color: $colorBackground;
     width: 650px;
     height: 200px;
     margin: 10px auto;
@@ -166,7 +166,7 @@ a.navbar-brand {
 }
 
 .rosell {
-    background-color: rgba(153, 192, 185, 0.5);
+    background-color: $colorBackground;
     width: 650px;
     height: 200px;
     margin: 10px auto;
@@ -177,7 +177,7 @@ a.navbar-brand {
 }
 
 .catena {
-    background-color: rgba(153, 192, 185, 0.5);
+    background-color: $colorBackground;
     width: 650px;
     height: 200px;
     margin: 10px auto;
@@ -188,7 +188,7 @@ a.navbar-brand {
 }
 
 .casaVigil {
-    background-color: rgba(153, 192, 185, 0.5);
+    background-color: $colorBackground;
     width: 650px;
     height: 250px;
     margin: auto;
@@ -199,7 +199,7 @@ a.navbar-brand {
 }
 
 .trapiche {
-    background-color: rgba(153, 192, 185, 0.5);
+    background-color: $colorBackground;
     width: 650px;
     height: 250px;
     margin: 10px auto;
@@ -210,7 +210,7 @@ a.navbar-brand {
 }
 
 .santaJulia {
-    background-color: rgba(153, 192, 185, 0.5);
+    background-color: $colorBackground;
     width: 650px;
     height: 250px;
     margin: 10px auto;
@@ -221,7 +221,7 @@ a.navbar-brand {
 }
 
 .agostino {
-    background-color: rgba(153, 192, 185, 0.5);
+    background-color: $colorBackground;
     width: 650px;
     height: 250px;
     margin: 10px auto;
@@ -232,7 +232,7 @@ a.navbar-brand {
 }
 
 .argentia {
-    background-color: rgba(153, 192, 185, 0.5);
+    background-color: $colorBackground;
     width: 650px;
     height: 250px;
     margin: 10px auto;
@@ -243,7 +243,7 @@ a.navbar-brand {
 }
 
 .sunsets {
-    background-color: rgba(153, 192, 185, 0.5);
+    background-color: $colorBackground;
     width: 400px;
     height: 200px;
     margin: auto;
@@ -255,7 +255,7 @@ a.navbar-brand {
 }
 
 .dormir {
-    background-color: rgba(153, 192, 185, 0.5);
+    background-color: $colorBackground;
     width: 400px;
     height: 200px;
     margin: 10px auto;
@@ -267,7 +267,7 @@ a.navbar-brand {
 }
 
 .bici {
-    background-color: rgba(153, 192, 185, 0.5);
+    background-color: $colorBackground;
     width: 400px;
     height: 200px;
     margin: 10px auto;
@@ -279,7 +279,7 @@ a.navbar-brand {
 }
 
 .abeja {
-    background-color: rgba(153, 192, 185, 0.5);
+    background-color: $colorBackground;
     width: 770px;
     height: 200px;
     margin: auto;
@@ -290,7 +290,7 @@ a.navbar-brand {
 }
 
 .bianchi {
-    background-color: rgba(153, 192, 185, 0.5);
+    background-color: $colorBackground;
     width: 770px;
     height: 200px;
     margin: 10px auto;
@@ -301,7 +301,7 @@ a.navbar-brand {
 }
 
 .algodon {
-    background-color: rgba(153, 192, 185, 0.5);
+    background-color: $colorBackground;
     width: 770px;
     height: 200px;
     margin: 10px auto;
@@ -312,7 +312,7 @@ a.navbar-brand {
 }
 
 .suter {
-    background-color: rgba(153, 192, 185, 0.5);
+    background-color: $colorBackground;
     width: 770px;
     height: 200px;
     margin: 10px auto;
@@ -323,7 +323,7 @@ a.navbar-brand {
 }
 
 .rivier {
-    background-color: rgba(153, 192, 185, 0.5);
+    background-color: $colorBackground;
     width: 770px;
     height: 200px;
     margin: 10px auto;
@@ -334,7 +334,7 @@ a.navbar-brand {
 }
 
 .superUco {
-    background-color: rgba(153, 192, 185, 0.5);
+    background-color: $colorBackground;
     width: 630px;
     height: 230px;
     margin: auto;
@@ -345,7 +345,7 @@ a.navbar-brand {
 }
 
 .andeluna {
-    background-color: rgba(153, 192, 185, 0.5);
+    background-color: $colorBackground;
     width: 630px;
     height: 230px;
     margin: 10px auto;
@@ -356,7 +356,7 @@ a.navbar-brand {
 }
 
 .corazon {
-    background-color: rgba(153, 192, 185, 0.5);
+    background-color: $colorBackground;
     width: 630px;
     height: 230px;
     margin: 10px auto;
@@ -367,7 +367,7 @@ a.navbar-brand {
 }
 
 .alfa {
-    background-color: rgba(153, 192, 185, 0.5);
+    background-color: $colorBackground;
     width: 630px;
     height: 230px;
     margin: 10px auto;
@@ -378,7 +378,7 @@ a.navbar-brand {
 }
 
 .zuccardi {
-    background-color: rgba(153, 192, 185, 0.5);
+    background-color: $colorBackground;
     width: 630px;
     height: 230px;
     margin: 10px auto;
@@ -388,85 +388,8 @@ a.navbar-brand {
     align-items: center;
 }
 
-@media screen and (max-width: 576px) {
+@import "small";
 
-    p {
-        font-size: 20px;
-    }
-    
-    .size {
-        display: none;
-    }
+@import "medium";
 
-    .fotos {
-        display: none;
-    }
-
-    .mediana {
-        width: 300px;
-        height: 180px;
-    }
-
-    fieldset {
-        text-align: center;
-    }
-
-    .renacer, .susanaBalbo, .riccitelli, .rosell, .catena, .casaVigil, .trapiche, .santaJulia, .agostino, .argentia, .abeja, .bianchi, .algodon, .suter, .rivier, .superUco, .andeluna, .corazon, .alfa, .zuccardi, .sunsets, .bici, .dormir {
-        width: auto;
-        height: auto;
-    }
-
-    .decoracion {
-        text-align: center;
-    }
-}
-
-@media screen and (min-width: 768px) {
-
-    fieldset {
-        text-align: center;
-    }
-
-    .decoracion {
-        text-align: center;
-    }
-
-    .renacer, .susanaBalbo, .riccitelli, .rosell, .catena, .casaVigil, .trapiche, .santaJulia, .agostino, .argentia, .abeja, .bianchi, .algodon, .suter, .rivier, .superUco, .andeluna, .corazon, .alfa, .zuccardi {
-        width: auto;
-        height: auto;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-
-    p {
-        font-size: 30px;
-    }
-    
-    .size {
-        display: block;
-    }
-
-    .fotos {
-        display: block;
-    }
-
-    .mediana {
-        width: 450px;
-        height: 290px;
-    }
-
-    fieldset {
-        margin-left: 40px;
-        text-align: left;
-    }
-
-    .renacer, .susanaBalbo, .riccitelli, .rosell, .catena, .casaVigil, .trapiche, .santaJulia, .agostino, .argentia, .abeja, .bianchi, .algodon, .suter, .rivier, .superUco, .andeluna, .corazon, .alfa, .zuccardi {
-        width: 770px;
-        height: auto;
-    }
-
-    .sunsets, .bici, .dormir {
-        width: 400px;
-    }
-}
+@import "large";

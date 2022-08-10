@@ -1,0 +1,33 @@
+@media screen and (min-width: 1200px) {
+
+    p {
+        font-size: 30px;
+    }
+    
+    .size {
+        display: block;
+    }
+
+    .fotos {
+        display: block;
+    }
+
+    .mediana {
+        width: 450px;
+        height: 290px;
+    }
+
+    fieldset {
+        margin-left: 40px;
+        text-align: left;
+    }
+
+    .renacer, .susanaBalbo, .riccitelli, .rosell, .catena, .casaVigil, .trapiche, .santaJulia, .agostino, .argentia, .abeja, .bianchi, .algodon, .suter, .rivier, .superUco, .andeluna, .corazon, .alfa, .zuccardi {
+        width: 770px;
+        height: auto;
+    }
+
+    .sunsets, .bici, .dormir {
+        width: 400px;
+    }
+}
