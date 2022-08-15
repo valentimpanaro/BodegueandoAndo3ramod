@@ -23,10 +23,14 @@ body {
   height: auto;
   width: auto;
   display: flex;
-  flex-direction: row;
+  /*flex-direction: row;*/
   justify-content: space-between;
   list-style: none;
   align-items: center;
+}
+
+ul .navbar-nav {
+  flex-direction: column;
 }
 
 a {
