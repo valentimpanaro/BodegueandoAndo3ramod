@@ -30,6 +30,9 @@ body {
     justify-content: space-between;
     list-style: none;
     align-items: center;
+    .navbar-nav {
+        flex-direction: column;
+    }
 }
 
 a {
