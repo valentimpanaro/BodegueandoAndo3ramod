@@ -112,7 +112,6 @@ h2 {
 
 h3 {
     color: black;
-    font-weight: bold;
 }
 
 footer {
@@ -135,120 +134,112 @@ div.container-fluid {
     padding-right: 0px;
 }
 
-.renacer {
-    background-color: $colorBackground;
-    width: 650px;
-    height: 200px;
-    margin: auto;
+@mixin flex-row-space-center {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+}
+
+$lujan: (
+    ancho: 650px,
+    largo: 200px,
+);
+
+.renacer {
+    background-color: $colorBackground;
+    width: map-get($lujan, ancho);
+    height: map-get($lujan, largo);
+    margin: auto;
+    @include flex-row-space-center;
 }
 
 .susanaBalbo {
     background-color: $colorBackground;
-    width: 650px;
-    height: 200px;
+    width: map-get($lujan, ancho);
+    height: map-get($lujan, largo);
     margin: 10px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flex-row-space-center;
 }
 
 .riccitelli {
     background-color: $colorBackground;
-    width: 650px;
-    height: 200px;
+    width: map-get($lujan, ancho);
+    height: map-get($lujan, largo);
     margin: 10px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flex-row-space-center;
 }
 
 .rosell {
     background-color: $colorBackground;
-    width: 650px;
-    height: 200px;
+    width: map-get($lujan, ancho);
+    height: map-get($lujan, largo);
     margin: 10px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flex-row-space-center;
 }
 
 .catena {
     background-color: $colorBackground;
-    width: 650px;
-    height: 200px;
+    width: map-get($lujan, ancho);
+    height: map-get($lujan, largo);
     margin: 10px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flex-row-space-center;
 }
+
+$maipu: (
+    ancho: 650px,
+    largo: 250px,
+);
 
 .casaVigil {
     background-color: $colorBackground;
-    width: 650px;
-    height: 250px;
+    width: map-get($maipu, ancho);
+    height: map-get($maipu, largo);
     margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    @include flex-row-space-center;
 }
 
 .trapiche {
     background-color: $colorBackground;
-    width: 650px;
-    height: 250px;
+    width: map-get($maipu, ancho);
+    height: map-get($maipu, largo);
     margin: 10px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    @include flex-row-space-center;
 }
 
 .santaJulia {
     background-color: $colorBackground;
-    width: 650px;
-    height: 250px;
+    width: map-get($maipu, ancho);
+    height: map-get($maipu, largo);
     margin: 10px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    @include flex-row-space-center;
 }
 
 .agostino {
     background-color: $colorBackground;
-    width: 650px;
-    height: 250px;
+    width: map-get($maipu, ancho);
+    height: map-get($maipu, largo);
     margin: 10px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    @include flex-row-space-center;
 }
 
 .argentia {
     background-color: $colorBackground;
-    width: 650px;
-    height: 250px;
+    width: map-get($maipu, ancho);
+    height: map-get($maipu, largo);
     margin: 10px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    @include flex-row-space-center;
 }
+
+$actividades: (
+    ancho: 400px,
+    largo: 200px,
+);
 
 .sunsets {
     background-color: $colorBackground;
-    width: 400px;
-    height: 200px;
+    width: map-get($actividades, ancho);
+    height: map-get($actividades, largo);
     margin: auto;
     padding: 0 0 0 20px;
     display: flex;
@@ -259,8 +250,8 @@ div.container-fluid {
 
 .dormir {
     background-color: $colorBackground;
-    width: 400px;
-    height: 200px;
+    width: map-get($actividades, ancho);
+    height: map-get($actividades, largo);
     margin: 10px auto;
     padding: 0 0 0 20px;
     display: flex;
@@ -271,8 +262,8 @@ div.container-fluid {
 
 .bici {
     background-color: $colorBackground;
-    width: 400px;
-    height: 200px;
+    width: map-get($actividades, ancho);
+    height: map-get($actividades, largo);
     margin: 10px auto;
     padding: 0 0 0 20px;
     display: flex;
@@ -281,114 +272,94 @@ div.container-fluid {
     align-items: center;
 }
 
+$sanRa: (
+    ancho: 770px,
+    largo: 200px,
+);
+
 .abeja {
     background-color: $colorBackground;
-    width: 770px;
-    height: 200px;
+    width: map-get($sanRa, ancho);
+    height: map-get($sanRa, largo);
     margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    @include flex-row-space-center;
 }
 
 .bianchi {
     background-color: $colorBackground;
-    width: 770px;
-    height: 200px;
+    width: map-get($sanRa, ancho);
+    height: map-get($sanRa, largo);
     margin: 10px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    @include flex-row-space-center;
 }
 
 .algodon {
     background-color: $colorBackground;
-    width: 770px;
-    height: 200px;
+    width: map-get($sanRa, ancho);
+    height: map-get($sanRa, largo);
     margin: 10px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    @include flex-row-space-center;
 }
 
 .suter {
     background-color: $colorBackground;
-    width: 770px;
-    height: 200px;
+    width: map-get($sanRa, ancho);
+    height: map-get($sanRa, largo);
     margin: 10px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    @include flex-row-space-center;
 }
 
 .rivier {
     background-color: $colorBackground;
-    width: 770px;
-    height: 200px;
+    width: map-get($sanRa, ancho);
+    height: map-get($sanRa, largo);
     margin: 10px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    @include flex-row-space-center;
 }
+
+$ucoValley: (
+    ancho: 630px,
+    largo: 230px,
+);
 
 .superUco {
     background-color: $colorBackground;
-    width: 630px;
-    height: 230px;
+    width: map-get($ucoValley, ancho);
+    height: map-get($ucoValley, largo);
     margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    @include flex-row-space-center;
 }
 
 .andeluna {
     background-color: $colorBackground;
-    width: 630px;
-    height: 230px;
+    width: map-get($ucoValley, ancho);
+    height: map-get($ucoValley, largo);
     margin: 10px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    @include flex-row-space-center;
 }
 
 .corazon {
     background-color: $colorBackground;
-    width: 630px;
-    height: 230px;
+    width: map-get($ucoValley, ancho);
+    height: map-get($ucoValley, largo);
     margin: 10px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    @include flex-row-space-center;
 }
 
 .alfa {
     background-color: $colorBackground;
-    width: 630px;
-    height: 230px;
+    width: map-get($ucoValley, ancho);
+    height: map-get($ucoValley, largo);
     margin: 10px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    @include flex-row-space-center;
 }
 
 .zuccardi {
     background-color: $colorBackground;
-    width: 630px;
-    height: 230px;
+    width: map-get($ucoValley, ancho);
+    height: map-get($ucoValley, largo);
     margin: 10px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    @include flex-row-space-center;
 }
 
 @import "small";
